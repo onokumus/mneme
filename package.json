@@ -1,15 +1,13 @@
 {
   "name": "mneme",
-  "version": "0.1.0",
+  "version": "0.1.1-alpha",
   "description": "coming soon ...",
-  "main": "index.js",
+  "type": "module",
+  "exports":"./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/onokumus/mneme.git"
-  },
+  "repository": "onokumus/mneme",
   "keywords": [],
   "author": "Osman Nuri Okumuş <onokumus@gmail.com> (https://github.com/onokumus)",
   "license": "MIT",

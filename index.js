@@ -1,1 +1,1 @@
-console.log('mneme loaded ...');
+export const mneme = "Hello from mneme!";
