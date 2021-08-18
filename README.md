@@ -36,9 +36,14 @@ npm i mneme
 ### Browser
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/mneme"></script>
+<script type="module">
+  import { mneme } from "https://cdn.jsdelivr.net/npm/mneme/dist/esm/index.js";
+  console.log(mneme); //=> Hello from mneme!
+</script>
 
-<script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/mneme"></script>
+
+<script nomodule>
   console.log(mneme); //=> Hello from mneme!
 </script>
 ```
