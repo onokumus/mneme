@@ -13,16 +13,14 @@ npm i mneme
 ### NodeJS
 1. ES Module
 
-    Your `package.json`
-
   ```json
+    // package.json
   {
-    ...
-    "type": "module",
-    ...
+    "type": "module"
   }
   ```
   ```js
+  // app.js
   import { mneme } from "mneme";
 
   console.log(mneme); //=> Hello from mneme!
@@ -38,7 +36,9 @@ npm i mneme
 ### Browser
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/mneme">
+<script src="https://cdn.jsdelivr.net/npm/mneme"></script>
+
+<script>
   console.log(mneme); //=> Hello from mneme!
 </script>
 ```
