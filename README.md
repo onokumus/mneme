@@ -1,6 +1,6 @@
 # mneme
 
-> es module for testing
+> Hybrid NPM Module for ESM and CommonJS
 
 ## Install
 
@@ -10,8 +10,35 @@ npm i mneme
 
 ## Usage
 
-```js
-import { mneme } from "mneme";
+### NodeJS
+1. ES Module
 
-console.log(mneme): //=> Hello from mneme!
+    Your `package.json`
+
+  ```json
+  {
+    ...
+    "type": "module",
+    ...
+  }
+  ```
+  ```js
+  import { mneme } from "mneme";
+
+  console.log(mneme); //=> Hello from mneme!
+  ```
+
+2. CommonJS
+  ```js
+  const { mneme } = require("mneme");
+
+  console.log(mneme); //=> Hello from mneme!
+  ```
+
+### Browser
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/mneme">
+  console.log(mneme); //=> Hello from mneme!
+</script>
 ```

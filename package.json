@@ -1,14 +1,34 @@
 {
   "name": "mneme",
-  "version": "0.1.1-alpha",
-  "description": "coming soon ...",
+  "version": "0.1.1-alpha.1",
+  "description": "Hybrid NPM Module for ESM and CommonJS",
   "type": "module",
-  "exports":"./index.js",
+  "types": "dist/types/index.d.ts",
+  "browser": "dist/mneme.js",
+  "main": "dist/csj/index.js",
+  "module": "dist/esm/index.js",
+  "exports":{
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./": "./"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "onokumus/mneme",
-  "keywords": [],
+  "keywords": [
+    "hybrid",
+    "npm",
+    "esm",
+    "module",
+    "commonjs"
+  ],
   "author": "Osman Nuri Okumuş <onokumus@gmail.com> (https://github.com/onokumus)",
   "license": "MIT",
   "bugs": {
